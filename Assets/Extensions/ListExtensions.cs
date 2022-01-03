@@ -18,7 +18,7 @@ namespace OTools.Extensions
         
         public static T GetRandomItem<T>(this IList<T> list)
         {
-            return list.Count == 0 ? default(T) : list[Random.Range(0, list.Count)];
+            return list.Count == 0 ? default : list[Random.Range(0, list.Count)];
         }
         
         public static T PopRandomItem<T>(this IList<T> list)
